@@ -1,0 +1,16 @@
+#-------------------------- Docker-Compose file uses only for local development--not for pipeline as ------------------------------
+#-------------------------- docker-compose = orkestrering (lokalt) ------------------------------
+#-------------------------- Docker Compose – hur man kör FLERA containrar tillsammans(containrar skapas i Dockerfile) ------------------------------
+# Den: använder Dockerfile (eller färdiga images), beskriver hur containrar pratar med varandra, sätter portar, miljövariabler, volymer
+
+services:
+  backend:
+    image: app-backend:latest
+    restart: "no"
+    ports:
+      - "3000:3000"
+    environment:
+      MONGO_URL: ${MONGO_URL}
+
+volumes:
+  mongodata:
