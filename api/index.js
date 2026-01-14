@@ -9,11 +9,11 @@ import admin from "firebase-admin";
 
 dotenv.config();  // funkar lokalt, ignoreras på Vercel
 
-const raw = process.env.SERVICE_ACCOUNT_FILE;
+//const raw = process.env.SERVICE_ACCOUNT_FILE;
 
-if (!raw) {
-  throw new Error("SERVICE_ACCOUNT_FILE is missing");
-}
+//if (!raw) {
+ // throw new Error("SERVICE_ACCOUNT_FILE is missing");
+//}
 
 const serviceAccount = JSON.parse(raw);
 
