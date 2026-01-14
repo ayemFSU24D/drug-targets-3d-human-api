@@ -28,8 +28,8 @@ app.get("/", (_req, res) => {
   res.send("Backend running");
 });
 
-app.use("/api/drug", drugRoutes);
-app.use("/auth-api/drug", drugRoutes);
-app.use("/free-api/drug", drugRoutes);
+app.use("/drug", drugRoutes);
+app.use("/auth/drug", drugRoutes);
+app.use("/free/drug", drugRoutes);
 
 export default app; // 👈 VIKTIGT (serverless)
