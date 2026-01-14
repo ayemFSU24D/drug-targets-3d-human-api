@@ -1,5 +1,4 @@
-app/serviceAccountKey.json
 serviceAccountKey.json
+serviceAccount.json
 .env
-app/node_modules
 node_modules
