@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { connectDB } from "../config/DB.js";
 import drugRoutes from "../routes/drugRoutes.js";
-import admin from "firebase-admin";
+import admin from "firebase-admin"; 
 
 
 
