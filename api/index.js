@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 // ⚠️ Tillfälligt: kommentera bort DB också om du vill vara 100 % säker
-connectDB();
+//connectDB();
 
 app.get("/", (_req, res) => {
   res.send("Backend running without auth");
