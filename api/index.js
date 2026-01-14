@@ -7,7 +7,7 @@ import admin from "firebase-admin";
 
 
 
-dotenv.config(); // funkar lokalt, ignoreras på Vercel
+dotenv.config();  // funkar lokalt, ignoreras på Vercel
 
 const serviceAccount = JSON.parse(
   process.env.SERVICE_ACCOUNT_FILE.replace(/\\n/g, "\n")
