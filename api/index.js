@@ -1,15 +1,7 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
-import { connectDB } from "../config/DB.js";
 import drugRoutes from "../routes/drugRoutes.js";
-import admin from "firebase-admin"; 
 
-
-import express from "express";
-import cors from "cors";
-import { connectDB } from "../config/DB.js";
-import drugRoutes from "../routes/drugRoutes.js";
 
 const app = express();
 
